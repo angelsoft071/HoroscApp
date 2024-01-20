@@ -2,7 +2,7 @@ package com.angelsoft.horoscapp.domain.model
 
 import com.angelsoft.horoscapp.R
 
-sealed class HoroscopeInfo(val img: Int, name: Int) {
+sealed class HoroscopeInfo(val img: Int, val name: Int) {
     data object Aries : HoroscopeInfo(R.drawable.aries, R.string.aries)
     data object Taurus : HoroscopeInfo(R.drawable.tauro, R.string.taurus)
     data object Gemini : HoroscopeInfo(R.drawable.geminis, R.string.gemini)
