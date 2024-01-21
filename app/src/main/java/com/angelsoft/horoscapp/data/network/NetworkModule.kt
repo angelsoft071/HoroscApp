@@ -1,5 +1,6 @@
 package com.angelsoft.horoscapp.data.network
 
+import com.angelsoft.horoscapp.BuildConfig.BASE_URL
 import com.angelsoft.horoscapp.data.RepositoryImpl
 import com.angelsoft.horoscapp.data.core.interceptor.AuthInterceptor
 import com.angelsoft.horoscapp.domain.Repository
@@ -20,7 +21,7 @@ object NetworkModule {
     @Singleton
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://newastro.vercel.app")
+            .baseUrl(BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
