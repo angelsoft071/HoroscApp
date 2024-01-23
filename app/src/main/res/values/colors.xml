@@ -8,7 +8,7 @@
     <color name="secondary">#FFC107</color>
     <color name="accent">#ffffff</color>
     <color name="gold">#ffe78f</color>
-    <color name="black_alpha">#98000000</color>
+    <color name="white_alpha">#B2FFFFFF</color>
 
     <color name="red">#FF0000</color>
 </resources>
