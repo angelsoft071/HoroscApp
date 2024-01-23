@@ -66,28 +66,31 @@
             android:id="@+id/tvLucky"
             style="@style/Text"
             android:layout_width="0dp"
+            android:layout_margin="16dp"
             android:layout_height="0dp"
             android:gravity="center"
             android:textSize="28sp"
-            app:layout_constraintBottom_toTopOf="@id/tvShare"
+            app:layout_constraintBottom_toTopOf="@id/btnShare"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ivLuckyCard"
             tools:text="@tools:sample/lorem/random" />
 
-        <TextView
-            android:id="@+id/tvShare"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@color/primary"
             android:layout_marginBottom="16dp"
-            android:gravity="center"
-            style="@style/Text"
-
-            android:text="@string/share"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:text="@string/share"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvLucky" />
+            app:layout_constraintTop_toBottomOf="@id/tvLucky"
+            android:layout_height="wrap_content"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
