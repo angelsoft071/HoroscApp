@@ -2,7 +2,16 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="MainActivityTest">
+        <State />
+      </entry>
       <entry key="app">
+        <State />
+      </entry>
+      <entry key="when_horoscope_is_selected_then_open_detail()">
+        <State />
+      </entry>
+      <entry key="when_main_activity_is_created_then_open_luck_fragment()">
         <State />
       </entry>
     </value>
