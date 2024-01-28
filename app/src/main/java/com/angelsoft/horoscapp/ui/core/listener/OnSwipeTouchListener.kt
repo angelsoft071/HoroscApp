@@ -5,6 +5,7 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
 
+@Suppress("NestedBlockDepth")
 open class OnSwipeTouchListener(context: Context) : View.OnTouchListener {
 
     companion object {

@@ -5,6 +5,7 @@ import com.angelsoft.horoscapp.ui.model.LuckyModel
 import javax.inject.Inject
 import kotlin.random.Random
 
+@Suppress("CyclomaticComplexMethod")
 class RandomCardProvider @Inject constructor() {
     fun getLucky(): LuckyModel? {
         return when (Random.nextInt(0, 32)) {
