@@ -15,22 +15,23 @@ android {
         applicationId = "com.angelsoft.horoscapp"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 3
+        versionName = "1.0.2"
 
         testInstrumentationRunner = "com.angelsoft.horoscapp.CustomTestRunner"
     }
 
     buildTypes {
         getByName("release") {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             isDebuggable = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
             resValue("string", "arisname", "HoroscApp")
-            buildConfigField("String", "BASE_URL", "\"https://newastro-release.vercel.app/\"")
+            buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app/\"")
         }
         getByName("debug") {
             isDebuggable = true
@@ -53,7 +54,7 @@ android {
 
 dependencies {
     // NavComponent
-    val navVersion = "2.7.6"
+    val navVersion = "2.7.7"
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
 
